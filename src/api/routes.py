@@ -17,7 +17,7 @@ def handle_hello():
 
     return jsonify(response_body), 200
 
-@api.route('/Todos', methods=['GET'])
+@api.route('/todos', methods=['GET'])
 def get_Todos():
     todos=Todos.query.all()
     print(todos)
