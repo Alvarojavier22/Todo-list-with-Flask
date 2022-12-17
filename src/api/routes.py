@@ -16,3 +16,8 @@ def handle_hello():
     }
 
     return jsonify(response_body), 200
+
+@api.route('/Todos', methods=['GET'])
+def get_Todos():
+    todos=Todos.get()
+    print(todos)
